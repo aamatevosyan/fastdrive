@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="http://test.fastdrive.am/public/images/favicon_1.ico">
+
+                    <title></title>
+
+        <!--Footable-->
+        <link href="http://test.fastdrive.am/public/plugins/footable/css/footable.core.css" rel="stylesheet">
+        <link href="http://test.fastdrive.am/public/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+        <link href="http://test.fastdrive.am/public/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/multiselect/css/multi-select.css" rel="stylesheet" type="text/css">
+        <!-- DataTables -->
+        <link href="http://test.fastdrive.am/public/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/datatables/dataTables.colVis.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/plugins/datatables/fixedColumns.dataTables.min.css" rel="stylesheet" type="text/css">
+
+        <link href="http://test.fastdrive.am/public/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/css/core.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/css/components.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/css/pages.css" rel="stylesheet" type="text/css">
+        <link href="http://test.fastdrive.am/public/css/responsive.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="http://test.fastdrive.am/public/js/modernizr.min.js"></script>
+
+        <script src="http://test.fastdrive.am/public/js/jquery.min.js"></script>
+        <script src="http://test.fastdrive.am/public/js/bootstrap.min.js"></script>
+        <script src="http://test.fastdrive.am/public/js/barcode.js"></script>
+        <script src="http://test.fastdrive.am/public/js/print.js"></script>
+
+    <style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+	font-weight: bold;
+	padding: 8px 15px 8px 14px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	white-space: nowrap;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+	background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+	color: #B94A48;
+	background-color: #F2DEDE;
+	border-color: #EED3D7;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+	color: #468847;
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+	color: #3A87AD;
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+	color: #C09853;
+	background-color: #FCF8E3;
+	border-color: #FBEED5;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style><style type="text/css" id="notify-metro">.notifyjs-metro-default {
+	color: #fafafa !important;
+	background-color: #ABB7B7;
+	border: 1px solid #ABB7B7;
+}
+.notifyjs-metro-error {
+	color: #fafafa !important;
+	background-color: #f05050;
+	border: 1px solid #ef5350;
+}
+.notifyjs-metro-custom {
+	color: #fafafa !important;
+	background-color: #5fbeaa;
+	border: 1px solid #5fbeaa;
+}
+.notifyjs-metro-success {
+	color: #fafafa !important;
+	background-color: #81c868;
+	border: 1px solid #33b86c;
+}
+.notifyjs-metro-info {
+	color: #fafafa !important;
+	background-color: #34d3eb;
+	border: 1px solid #29b6f6;
+}
+.notifyjs-metro-warning {
+	color: #fafafa !important;
+	background-color: #ffbd4a;
+	border: 1px solid #ffd740;
+}
+.notifyjs-metro-black {
+	color: #fafafa !important;
+	background-color: #4c5667;
+	border: 1px solid #212121;
+}
+.notifyjs-metro-white {
+	background-color: #e6eaed;
+	border: 1px solid #ddd;
+}
+</style><style type="text/css" id="core-notify">.notifyjs-corner {
+	position: fixed;
+	margin: 5px;
+	z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+	position: relative;
+	display: block;
+	height: inherit;
+	width: inherit;
+	margin: 3px;
+}
+
+.notifyjs-wrapper {
+	z-index: 1;
+	position: absolute;
+	display: inline-block;
+	height: 0;
+	width: 0;
+}
+
+.notifyjs-container {
+	display: none;
+	z-index: 1;
+	position: absolute;
+}
+
+.notifyjs-hidable {
+	cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+	position: relative;
+}
+
+.notifyjs-arrow {
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+}</style><style type="text/css">/*.lleo_errorSelection *::-moz-selection,
+.lleo_errorSelection *::selection,
+.lleo_errorSelection *::-webkit-selection {
+    background-color: red !important;
+    color: #fff !important;;
+}*/
+
+#lleo_dialog,
+#lleo_dialog * {
+    color: #000 !important;
+    font: normal 13px Arial, Helvetica !important;
+    line-height: 15px !important;
+    margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none 0 !important;
+	position: static !important;
+	vertical-align: baseline !important;
+	overflow: visible !important;
+	width: auto !important;
+	height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+	float: none !important;
+	visibility: visible !important;
+	text-align: left !important;
+    text-transform: none !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important;
+    box-sizing: content-box !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    letter-spacing: normal !important;
+    -webkit-filter: none !important;
+    -moz-filter: none !important;
+    filter: none !important;
+}
+#lleo_dialog *:before,
+#lleo_dialog *:after {
+    content: '';
+}
+
+#lleo_dialog iframe {
+	height: 0 !important;
+	width: 0 !important;
+}
+
+#lleo_dialog {
+    position: absolute !important;
+    background: #fff !important;
+    border: solid 1px #ccc !important;
+    padding: 7px 0 0 !important;
+    left: -999px;
+    top: -999px;
+    width: 440px !important;
+    overflow: hidden;
+    display: block !important;
+    z-index: 999999999 !important;
+    box-shadow: 8px 16px 30px rgba(0, 0, 0, 0.16) !important;
+    border-radius: 3px !important;
+    opacity: 0 !important;
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
+}
+#lleo_dialog.lleo_show_small {
+    width: 150px !important;
+}
+#lleo_dialog.lleo_show {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s !important;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s !important;
+    -ms-transition: -ms-transform 0.3s, opacity 0.3s !important;
+    -o-transition: -o-transform 0.3s, opacity 0.3s !important;
+    transition: transform 0.3s, opacity 0.3s !important;
+}
+#lleo_dialog.lleo_collapse {
+    opacity: 0 !important;
+    -webkit-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -moz-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -ms-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -o-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s !important;
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s !important;
+    -ms-transition: -ms-transform 0.4s, opacity 0.4s !important;
+    -o-transition: -o-transform 0.4s, opacity 0.4s !important;
+    transition: transform 0.4s, opacity 0.4s !important;
+}
+#lleo_dialog input::-webkit-input-placeholder {
+    color: #aaa !important;
+}
+#lleo_dialog .lleo_has_pic #lleo_word {
+	margin-right: 80px !important;
+}
+#lleo_dialog #lleo_translationsContainer1 {
+	position: relative !important;
+}
+#lleo_dialog #lleo_translationsContainer2 {
+	padding: 7px 0 0 !important;
+	vertical-align: middle !important;
+}
+#lleo_dialog #lleo_word {
+    color: #000 !important;
+    margin: 0 5px 2px 0 !important;
+    /*float: left !important;*/
+}
+#lleo_dialog .lleo_has_sound #lleo_word {
+    margin-left: 30px !important;
+}
+#lleo_dialog #lleo_text {
+    font-weight: bold !important;
+    color: #d56e00 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+/*
+#lleo_dialog #lleo_text.lleo_known {
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+*/
+/*#lleo_dialog #lleo_closeBtn {
+    position: absolute !important;
+    right: 6px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 0 !important;
+    color: #aaa !important;
+    display: block !important;
+	z-index: 9999999999 !important;
+	width: 7px !important;
+	height: 7px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}*/
+
+#lleo_dialog #lleo_optionsBtn {
+    position: absolute !important;
+    right: 3px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    color: #aaa !important;
+    padding: 2px !important;
+	display: none;
+}
+    #lleo_dialog.lleo_optionsShown #lleo_optionsBtn {
+        display: block !important;
+    }
+    #lleo_dialog #lleo_optionsBtn img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+#lleo_dialog #lleo_sound {
+    float: left !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: 9px !important;
+    margin-right: 3px !important;
+    background: 0 0 no-repeat !important;
+    cursor: pointer !important;
+    display: none !important;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAfNJREFUeNq0U01IVFEU/u57Oo5WhBRIBBptykWLYBa2soWiEKQQEbrSFsGbVRQKQc2iFqGitXqvjQxCoCJCqyI0aBUtZILaJNUuYWYWo8HovJ/707nP94bnz0rxwvfOuefd8517fi5TSuE4i50YwZ3l37ZhNlpgzFkaaM/G9sHF1YskNrT+7l4PjMOcb78t2JL71uxgB+2UlfxHTtq5N94fIOh/88kWgWfl73ZCSQkpeGg3H091JY6dI2S00qA/N3KO3dDUYhFgEmZGurG+w9FqApIHsVM7kaTF9Nhn0r8Q7hPWQgIRuNaH3AMUA4W/Lkdh04cpFS43G0TgxQTvCdMETVAk3KynIHwXZU/ge8XDt7KH9bKLjU0P2zVO5LsEpSejVRJ9UR18EtfqKegovs9R3Q6w9c/H1o4Aa2Jwm1lIvn9RJ4w9RdRRzqcYrpwycCll4Cy1lnkS3Bc6vfBg28v8aRIfI78zhB/1GygROH3jLyyzMQ0zlUZuZBSlKkeLoegGtTjYLcJ8pF+NakHOFC2J6w+f25mxSfWrWFF/ShXVPTGvtN14NNkVnxlYWJkgZEL7/vwKr55lKSVnaGYWkuYgrgG172uUv47+U7fw0EHaJXmalUQy/HqO6lBzEsVjJC4Q8kd6TETQpjuaGOvjv8b/AgwA/ij1XMx58NIAAAAASUVORK5CYII=) !important;
+}
+#lleo_dialog .lleo_has_sound #lleo_sound {
+    display: block !important;
+}
+
+#lleo_dialog #lleo_soundWave {
+    border: solid 5px #4495CC !important;
+    border-radius: 5px !important;
+    position: absolute !important;
+    left: -5px !important;
+    top: -5px !important;
+    right: -5px !important;
+    bottom: -5px !important;
+    z-index: 0 !important;
+    opacity: 0.9 !important;
+    display: none !important;
+}
+    #lleo_dialog #lleo_soundWave.lleo_beforePlaying {
+        display: block !important;
+    }
+    #lleo_dialog #lleo_soundWave.lleo_playing {
+        opacity: 0 !important;
+        border-width: 20px !important;
+        border-radius: 30px !important;
+
+        -webkit-transform: scale(1.07,1.1) !important;
+        -moz-transform: scale(1.07,1.1) !important;
+        -ms-transform: scale(1.07,1.1) !important;
+        transform: scale(1.07,1.1) !important;
+
+        -webkit-transition: all 0.6s !important;
+        -moz-transition: all 0.6s !important;
+        -ms-transition: all 0.6s !important;
+        transition: all 0.6s !important;
+    }
+
+
+#lleo_dialog #lleo_picOuter {
+    position: absolute !important;
+    float: right !important;
+    top: 4px;
+    right: 5px;
+    z-index: 9 !important;
+    display: none !important;
+    width: 100px !important;
+}
+    #lleo_dialog.lleo_optionsShown #lleo_picOuter {
+        right: 25px;
+    }
+#lleo_dialog .lleo_has_pic #lleo_picOuter {
+    display: block !important;
+}
+    #lleo_dialog #lleo_picOuter:hover {
+        width: auto !important;
+        z-index: 11 !important;
+    }
+#lleo_dialog #lleo_pic,
+#lleo_dialog #lleo_picBig {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    border: solid 2px #fff !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+    z-index: 1 !important;
+}
+#lleo_dialog #lleo_pic {
+	position: relative !important;
+    border: none !important;
+	width: 30px !important;
+}
+#lleo_dialog #lleo_picBig {
+    box-shadow: -1px 2px 4px rgba(0,0,0,0.3);
+    z-index: 2 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+    #lleo_dialog #lleo_picOuter:hover #lleo_picBig {
+        visibility: visible !important;
+        opacity: 1 !important;
+        -webkit-transition: opacity 0.3s !important;
+        -webkit-transition-delay: 0.3s !important;
+    }
+#lleo_dialog #lleo_transcription {
+    margin: 0 80px 4px 31px !important;
+    color: #aaaaaa !important;
+}
+#lleo_dialog .lleo_no_trans {
+    color: #aaa !important;
+}
+
+#lleo_dialog .ll-translation-counter {
+	float: right !important;
+    font-size: 11px !important;
+    color: #aaa !important;
+    padding: 2px 2px 1px 10px !important;
+}
+
+#lleo_dialog .ll-translation-text {
+	float: left !important;
+	/*width: 80% !important;*/
+}
+
+#lleo_dialog #lleo_trans a {
+    color: #3F669F !important;
+    text-decoration: none !important;
+    text-overflow: ellipsis !important;
+    padding: 1px 4px !important;
+    overflow: hidden !important;
+    float: left !important;
+    width: 320px !important;
+}
+
+#lleo_dialog .ll-translation-item {
+    color: #3F669F !important;
+    border: solid 1px #fff !important;
+    padding: 3px !important;
+    width: 100% !important;
+    float: left !important;
+	-moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+#lleo_dialog .ll-translation-item:hover {
+	border: solid 1px #9FC2C9 !important;
+    background: #EDF4F6 !important;
+	cursor: pointer !important;
+}
+#lleo_dialog .ll-translation-item:hover .ll-translation-counter {
+	color: #83a0a6 !important;
+}
+
+#lleo_dialog .ll-translation-marker {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAWSURBVBhXY7RPm/+fAQkwIXNAbMICAJQ8AkvqWg/SAAAAAElFTkSuQmCC) !important;
+    display: inline-block !important;
+    width: 4px !important;
+    height: 4px !important;
+    margin: 7px 5px 2px 2px !important;
+    float: left !important;
+}
+
+#lleo_dialog #lleo_icons {
+    color: #aaa !important;
+    font-size: 11px !important;
+    background: #f8f8f8 !important;
+    padding: 10px 10px 10px 16px !important;
+}
+#lleo_icons a {
+    display: inline-block !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 10px -4px 3px !important;
+    text-decoration: none !important;
+    opacity: 0.5 !important;
+    background: url(data:image/png;base64,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) !important;
+}
+#lleo_icons a:hover {
+    opacity: 1 !important;
+}
+#lleo_icons a.lleo_google     {background-position:-34px 0 !important;}
+#lleo_icons a.lleo_multitran  {background-position:-64px 0 !important;}
+#lleo_icons a.lleo_lingvo     {background-position:-51px 0 !important; width: 12px !important;}
+#lleo_icons a.lleo_dict       {background-position:-17px 0 !important;}
+#lleo_icons a.lleo_linguee    {background-position:-81px 0 !important;}
+#lleo_icons a.lleo_michaelis  {background-position:-98px 0 !important;}
+
+#lleo_dialog #lleo_contextContainer {
+    margin: 0 !important;
+    padding: 3px 15px 8px 10px !important;
+    background: #eee !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)) !important;
+    background: -moz-linear-gradient(-90deg, #fff, #eee) !important;
+    border-bottom: solid 1px #ddd !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    display: none !important;
+    overflow: hidden !important;
+}
+#lleo_dialog .lleo_has_context #lleo_contextContainer {
+    display: block !important;
+}
+#lleo_dialog #lleo_context {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    line-height: 12px !important;
+    font-size: 11px !important;
+    margin-left: 2px !important;
+}
+#lleo_dialog #lleo_context b {
+    line-height: 12px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 11px !important;
+}
+/*#lleo_dialog #lleo_gBrand {
+    color: #aaa !important;
+    font-size: 10px !important;
+    *//*padding-right: 52px !important;*//*
+    padding-bottom: 14px !important;
+    margin: -3px 4px 0 4px !important;
+    background: left bottom url(data:image/png;base64,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) no-repeat !important;
+    display: inline-block !important;
+    float: right !important;
+}
+#lleo_dialog #lleo_gBrand.hidden {
+    display: none !important;
+}*/
+#lleo_dialog #lleo_translateContextLink {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ddd)) !important;
+    background: -moz-linear-gradient(-90deg, #f4f4f4, #ddd) !important;
+    border: solid 1px !important;
+    box-shadow: 1px 1px 0 #f6f6f6 !important;
+    border-color: #999 #aaa #aaa #999 !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    padding: 0 3px !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    margin: 1px 5px 0 !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+#lleo_dialog #lleo_translateContextLink:hover {
+    background: #f8f8f8 !important;
+}
+#lleo_dialog #lleo_translateContextLink.hidden {
+    visibility: hidden !important;
+}
+
+#lleo_dialog #lleo_setTransForm {
+    display: block !important;
+    margin-top: 3px !important;
+    padding-top: 5px !important;
+    /* Set position and background because the form might be overlapped by an image when no translations */
+    position: relative !important;
+    background: #fff !important;
+    z-index: 10 !important;
+    padding-bottom: 10px !important;
+    padding-left: 16px !important;
+}
+#lleo_dialog .lleo-custom-translation {
+    padding: 4px 5px !important;
+    border: solid 1px #ddd !important;
+	border-radius: 2px !important;
+    width: 90% !important;
+    min-width: 270px !important;
+    background: -webkit-gradient(linear, 0 0, 0 20, from(#f1f1f1), to(#fff)) !important;
+    background: -moz-linear-gradient(-90deg, #f1f1f1, #fff) !important;
+	font: normal 13px Arial, Helvetica !important;
+	line-height: 15px !important;
+}
+#lleo_dialog .lleo-custom-translation:hover {
+    border: solid 1px #aaa !important;
+}
+#lleo_dialog .lleo-custom-translation:focus {
+    background: #FFFEC9 !important;
+}
+
+#lleo_dialog *.hidden {
+    display: none !important;
+}
+
+#lleo_dialog .infinitive{
+    color: #D56E00 !important;
+    text-decoration: none;
+    border-bottom: 1px dotted #D56E00 !important;
+}
+#lleo_dialog .infinitive:hover{
+    border: none !important;
+}
+
+#lleo_dialog .lleo_separator {
+    height: 1px !important;
+    background: #eee;
+    margin-top: 10px !important;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, #eee 8%, rgba(255,255,255,1) 80%) !important;
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+}
+#lleo_dialog #lleo_trans {
+    /*border-top: 1px solid #eeeeee !important;*/
+    padding: 5px 30px 0 14px !important;
+    zoom: 1;
+}
+
+#lleo_dialog .lleo_clearfix {
+	display: block !important;
+	clear: both !important;
+	visibility: hidden !important;
+	height: 0 !important;
+	font-size: 0 !important;
+}
+
+
+#lleo_dialog #lleo_picOuter table {
+    width: 44px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    vertical-align: middle !important;
+}
+
+#lleo_dialog #lleo_picOuter td {
+    width: 38px !important;
+    height: 38px !important;
+    /*border: 1px solid #eeeeee !important;*/
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+#lleo_dialog #lleo_picOuter td div {
+	height: 38px !important;
+	overflow: hidden !important;
+}
+
+#lleo_dialog .lleo_empty {
+    margin: 0 5px 7px !important;
+}
+
+#lleo_youtubeExportBtn {
+    margin-left: 10px;
+    height: 24px;
+}
+    #lleo_youtubeExportBtn i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: 0 0 url(https://d144fqpiyasmrr.cloudfront.net/plugins/all/images/i16.png) !important;
+    }
+    #lleo_youtubeExportBtn .yt-uix-button-content {
+        font-size: 12px;
+        line-height: 2px;
+    }
+
+
+/*** Parsed Lyrics Content *****************************/
+
+.lleo_lyrics tran {
+    background: transparent !important;
+    border-radius: 2px !important;
+    text-shadow: none !important;
+    cursor: pointer !important;
+}
+    .lleo_lyrics tran:hover {
+        color: #fff !important;
+        background: #C77213 !important;
+        -webkit-transition: all 0.1s !important;
+        -moz-transition: all 0.1s !important;
+        -ms-transition: all 0.1s !important;
+        -o-transition: all 0.1s !important;
+        transition: all 0.1s !important;
+    }
+
+.lleo_songName {
+    border: solid 1px #ffd47c;
+    background: #fff1c2;
+    border-radius: 2px;
+}
+
+.lleo_hidden_iframe {
+    visibility: hidden;
+}</style></head><body class="fixed-left-void smallscreen">    <!-- Begin page -->    <div id="wrapper" class="enlarged">        <!-- Top Bar Start -->        <div class="topbar">            <!-- LOGO -->            <div class="topbar-left">                <div class="text-center">                    <!-- Image Logo here -->                    <a href="http://test.fastdrive.am/admin" class="logo">                        <i class="icon-c-logo"> <img src="http://test.fastdrive.am/public/images/logo.png" height="25"> </i>                        <span><img src="http://test.fastdrive.am/public/images/logo.png" height="35"></span>                    </a>                </div>            </div>            <!-- Button mobile view to collapse sidebar menu -->            <div class="navbar navbar-default" role="navigation">                <div class="container">                    <div class="">                        <div class="pull-left">                            <button class="button-menu-mobile open-left waves-effect waves-light">                                <i class="md md-menu"></i>                            </button>                            <span class="clearfix"></span>                        </div>                        <ul class="nav navbar-nav hidden-xs">                            <li><a href="#" class="waves-effect waves-light">Կայք</a></li>                            <li><a href="#" class="waves-effect waves-light">Հավելված</a></li>                            <li><a href="http://test.fastdrive.am/admin/quest" class="waves-effect waves-light">Հանձնել քննություն</a></li>                            <li><a href="#" class="waves-effect waves-light">Հեռ՝ 055 08-58-88</a></li>                        </ul>                    </div>                    <!--/.nav-collapse -->                </div>            </div>        </div>        <!-- Top Bar End -->        <!-- ========== Left Sidebar Start ========== -->        <div class="left side-menu">            <div class="slimScrollDiv" style="position: relative; overflow: inherit; width: auto; height: 19106px;"><div class="sidebar-inner slimscrollleft" style="overflow: inherit; width: auto; height: 19106px;">                <!--- Divider -->                <div id="sidebar-menu">                    <ul>                        <li class="text-muted menu-title">Հարցաշարեր</li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/1" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 1</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/2" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 2</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/3" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 3</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/4" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 4</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/5" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 5</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/6" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 6</span> </a>                        </li>                        <li class="has_sub active">                            <a href="http://test.fastdrive.am//admin/test/7" class="waves-effect active"><i class="fa fa-list"></i><span> Հարցաշար 7</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/8" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 8</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/9" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 9</span> </a>                        </li>                        <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/10" class="waves-effect"><i class="fa fa-list"></i><span> Հարցաշար 10</span> </a>                        </li> <li class="has_sub">                            <a href="http://test.fastdrive.am//admin/test/11" class="waves-effect"><i class="fa fa-list"></i><span> Հոգեբանական հարցեր</span> </a>                        </li>                                           </ul>                    <div class="clearfix"></div>                </div>                <div class="clearfix"></div>            </div><div class="slimScrollBar" style="background: rgb(152, 166, 173); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 19106px; visibility: hidden;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>        </div>        <!-- Left Sidebar End -->        <!-- ============================================================== -->        <!-- Start right Content here -->        <!-- ============================================================== -->        <div class="content-page">            <!-- Start content -->            <div class="content">                <div class="container">    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է ավտոբուսների կայանումը բնակելի գոտիներում և բակային տարածքներում:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_429 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_429 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է` դրա համար նախատեսված տեղերում:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_429 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Կանգառի կետերի տարածքից դուրս թույլատրվու՞մ է ընդհանուր օգտագործման տրանսպորտային միջոցներին կանգառ կատարել:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_428 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_428 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Արգելվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է ավտոբուսների կանգառն ու կայանումը բնակավայրերում երթևեկելի մասի ձախ կողմում` միակողմ երթևեկության ճանապարհներին:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_427 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է միայն կանգառ կատարելու համար:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_427 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_427 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1529ddfa61/Page-11-Image-53.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր տրանսպորտային միջոցների համար է առանձնացված «A» տառով գծանշված գոտին:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_426 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ընդհանուր օգտագործման տրանսպորտային միջոցների համար:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_426 list_btn btn btn-block btn-white waves-effect waves-light">Տրոլեյբուսների և տաքսիների համար:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_426 list_btn btn btn-block btn-white waves-effect waves-light">Միայն ավտոբուսների համար, որոնք շարժվում են սահմանված երթուղով:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15294d7d2b/Page-11-Image-52.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ է նշանակում տվյալ ճանապարհային գծանշումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_425 list_btn btn btn-block btn-white waves-effect waves-light">Ընդհանուր օգտագործման տրանսպորտային միջոցների կանգառի և տաքսիների կայանման տեղ:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_425 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Ընդհանուր օգտագործման տրանսպորտային միջոցների կանգառի կետ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_425 list_btn btn btn-block btn-white waves-effect waves-light">Ուղևորներ նստեցնելու-իջեցնելու տեղ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1528b878b4/Page-11-Image-51.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր տրանսպորտային միջոցներին է թույլատրվում կայանել տվյալ ճանապարհային նշանի ազդեցության գոտում:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_424 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Տրանսպորտային միջոցներին, որոնք վարում են հաշմանդամները և միացված հաշվիչով տաքսիներին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_424 list_btn btn btn-block btn-white waves-effect waves-light">Միայն ընդհանուր օգտագործման տրանսպորտային միջոցներին:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15280207c9/Page-10-Image-50.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Տվյալ ճանապարհային գծանշումը թույլատրում է երթևեկել`</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_423 list_btn btn btn-block btn-white waves-effect waves-light">Ուղիղ, ձախ և հակառակ ուղղությամբ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_423 list_btn btn btn-block btn-white waves-effect waves-light">Միայն հակառակ ուղղությամբ:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_423 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Դեպի ձախ և հակառակ ուղղությամբ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_423 list_btn btn btn-block btn-white waves-effect waves-light">Միայն դեպի ձախ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1527730895/Page-10-Image-49.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Նշված ճանապարհային նշանների ազդման գոտում թույլատրվու՞մ է կանգառ կատարել, ուղևորներ նստեցնելու նպատակով:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_422 list_btn btn btn-block btn-white waves-effect waves-light"> Արգելվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_422 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1526d3ed65/Page-10-Image-48.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Տվյալ նշանի ազդեցության գոտում ո՞ր տրանսպորտային միջոցներին է թույլատրվում կանգառ կատարել:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_421 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Բոլորին արգելվում է:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_421 list_btn btn btn-block btn-white waves-effect waves-light">Միայն միացված հաշվիչով տաքսիներին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_421 list_btn btn btn-block btn-white waves-effect waves-light">Միայն հաշմանդամների կողմից ղեկավարվող տրանսպորտային միջոցներին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_421 list_btn btn btn-block btn-white waves-effect waves-light">Միայն ընդհանուր օգտագործման տրանսպորտային միջոցներին:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15261d4458/Page-10-Image-47.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Տվյալ իրավիճակում որտե՞ղ պետք է կանգ առնել:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_420 list_btn btn btn-block btn-white waves-effect waves-light">Կանգառը պարտադիր չէ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_420 list_btn btn btn-block btn-white waves-effect waves-light"> Երկրորդ ճանապարհային նշանի մոտ:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_420 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> «Կանգ-գիծ» գծանշման առջև:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_420 list_btn btn btn-block btn-white waves-effect waves-light"> Առաջին ճանապարհային նշանի մոտ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af152583d4a3/Page-10-Image-46.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Դեպի ձախ երթևեկությունը շարունակելու համար որտե՞ղ պետք է կանգ առնի ավտոբուսի վարորդը ճանապարհը թեթև մարդատար ավտոմոբիլին զիջելու համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_419 list_btn btn btn-block btn-white waves-effect waves-light">Վարորդի հայեցողությամբ անվտանգ տեղում:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_419 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Գծանշման մոտ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_419 list_btn btn btn-block btn-white waves-effect waves-light"> Ճանապարհային նշանի առջև:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1524bb6ba0/Page-10-Image-45.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Զբոսաշրջային ավտոբուսի վարորդը երկարատև հանգստի նպատակով իրավունք ունի՞ կանգ առնել նշված վայրում:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_418 list_btn btn btn-block btn-white waves-effect waves-light">Իրավունք ունի:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_418 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Իրավունք չունի:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15240b7f5a/Page-9-Image-44.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է կանոնավոր ուղևորափոխադրումներ իրականացնող ավտոբուսի վարորդին ուղևորներ նստեցնելու նպատակով կանգառ կատարել նշված վայրում:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_417 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_417 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Արգելվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15237f073a/Page-9-Image-43.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ավտոբուսը կանգ է առել հետիոտնին զիջելու համար: Թեթև մարդատար ավտոմոբիլի վարորդը տվյալ իրադրությունում խախտու՞մ է ճանապարհային երթևեկության կանոնների պահանջները:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_416 list_btn btn btn-block btn-white waves-effect waves-light">Չի խախտում:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_416 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Խախտում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1522e1fcd7/Page-9-Image-42.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Որտե՞ղ պետք է կանգ առնի վարորդը տվյալ իրավիճակում:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_415 list_btn btn btn-block btn-white waves-effect waves-light">Երթևեկելի գոտիների հատման առջև:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_415 list_btn btn btn-block btn-white waves-effect waves-light btn-success">«Կանգ-գիծ» գծանշման առջև:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_415 list_btn btn btn-block btn-white waves-effect waves-light">Լուսացույցի առջև:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_415 list_btn btn btn-block btn-white waves-effect waves-light">Կանգառը պարտադիր չէ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af152241c7f7/Page-9-Image-41.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թվարկվածներից ո՞ր դեպքում կարող է ավտոբուսի վարորդն անցնել երկկողմ երթևեկության եռագոտի ճանապարհի մեջտեղի գոտի, որը օգտագործվում է երկու ուղղությամբ երթևեկության համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_414 list_btn btn btn-block btn-white waves-effect waves-light">Ոչ մի պատասխանը ճիշտ չէ:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_414 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Վերոնշյալ երկու դեպքում էլ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_414 list_btn btn btn-block btn-white waves-effect waves-light">Ձախ շրջադարձ կամ հետադարձ կատարելու նպատակով:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_414 list_btn btn btn-block btn-white waves-effect waves-light">Վազանցելու կամ շրջանցելու նպատակով:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af152103a80b/Page-9-Image-40.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ավտոբուսի վարորդը կատարել է կանգառ ուղևորներ նստեցնելու նպատակով: Թեթև մարդատար ավտոմոբիլը երթևեկում է 70 կմ/ժ արագությամբ: Ո՞ր տրանսպորտային միջոցի վարորդն է խախտում ճանապարհային երթևեկության կանոնների պահանջները:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_413 list_btn btn btn-block btn-white waves-effect waves-light">Երկու վարորդներն էլ</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_413 list_btn btn btn-block btn-white waves-effect waves-light">Թեթև մարդատար ավտոմոբիլի վարորդը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_413 list_btn btn btn-block btn-white waves-effect waves-light">Ավտոբուսի վարորդը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_413 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ոչ ոք:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af152073b4fc/Page-9-Image-39.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ինչպե՞ս պետք է վարվի թեթև մարդատար ավտոմոբիլի վարորդը, եթե ավտոբուսի վարորդը սկսել է արգելակել:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_412 list_btn btn btn-block btn-white waves-effect waves-light">Կանգ առնի և շարունակի երթևեկությունը միայն այն դեպքում, երբ ավտոբուսը կվերսկսի երթևեկությունը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_412 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Դանդաղեցնի ընթացքը, անհրաժեշտության դեպքում կանգնի և շարունակի երթևեկությունը` համոզվելով, որ անցումում հետիոտներ չկան:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_412 list_btn btn btn-block btn-white waves-effect waves-light">Շարունակի երթևեկությունը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151fd2a1d3/Page-8-Image-38.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Այսպիսի ուղղաձիգ գծանշմամբ նշվում են`</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_411 list_btn btn btn-block btn-white waves-effect waves-light">Ճանապարհային շինությունների ցանկացած տարր, որը վտանգ է ստեղծում երթևեկության համար:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_411 list_btn btn btn-block btn-white waves-effect waves-light">Չլուսավորված թունելների մուտքը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_411 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Կամրջի, թունելի ստորին եզրերը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151f2a47cc/Page-8-Image-37.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է շարունակել երթևեկությունը սլաքով նշված ուղղությամբ:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_410 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է բեռնատար ավտոմոբիլին վազանցելու նպատակով:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_410 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է ուղևորներ իջեցնելու նպատակով կանգառ կատարելու համար:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_410 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է բոլոր դեպքերում:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_410 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151e7caa37/Page-8-Image-36.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Տրանսպորտային միջոցին թույլատրվու՞մ է կանգնել նշված տեղում ուղևորներ իջեցնելու համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_409 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է` բայց մայթին բարձրանալով:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_409 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Արգելվում է:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_409 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151dce73d2/Page-8-Image-35.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ է նշանակում երթևեկելի մասի գոտում գծանշված «A» տառը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_408 list_btn btn btn-block btn-white waves-effect waves-light">A" կարգի տրանսպորտային միջոցների երթևեկության համար նախատեսված հատուկ գոտի:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_408 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ընդհանուր օգտագործման տրանսպորտային միջոցների երթևեկության համար նախատեսված հատուկ գոտի:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_408 list_btn btn btn-block btn-white waves-effect waves-light"> Ճանապարհի (երթուղու) համարը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151d2d9fc1/Page-8-Image-34.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է զբոսաշրջային ավտոբուսին երթևեկել «A» գծանշումով գոտիով:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_407 list_btn btn btn-block btn-white waves-effect waves-light"> Թույլատրվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_407 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Արգելվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Եթե երկաթուղային գծանցով երթևեկությունն արգելված է և բացակայում են լուսացույցը, ճանապարհային նշաններն ու գծանշումը, ապա վարորդը պետք է կանգնի՝</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_406 list_btn btn btn-block btn-white waves-effect waves-light">Ուղեփակոցից անմիջապես առաջ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_406 list_btn btn btn-block btn-white waves-effect waves-light">Ուղեփակոցից ոչ պակաս, քան 3 մ հեռավորության վրա:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_406 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ուղեփակոցից ոչ պակաս, քան 5 մ հեռավորության վրա:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151c9077c5/Page-7-Image-33.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր տրանսպորտային միջոցների վարորդներն են սխալ կանգառ կատարել ուղևորներ իջեցնելու համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_405 list_btn btn btn-block btn-white waves-effect waves-light">Բոլոր վարորդները:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_405 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Մոտոցիկլի և ավտոբուսի վարորդները։</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_405 list_btn btn btn-block btn-white waves-effect waves-light">Ավտոբուսի վարորդը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_405 list_btn btn btn-block btn-white waves-effect waves-light">Մոտոցիկլի վարորդը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_405 list_btn btn btn-block btn-white waves-effect waves-light">Թեթև մարդատար ավտոմոբիլի վարորդը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151b82658c/Page-7-Image-32.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր պատասխանում են ճիշտ թվարկած կանգառի կանոնները խախտած վարորդները:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_404 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Բոլոր տրանսպորտային միջոցների վարորդները:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_404 list_btn btn btn-block btn-white waves-effect waves-light">Մոտոցիկլի վարորդը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_404 list_btn btn btn-block btn-white waves-effect waves-light">Կապույտ ավտոմոբիլի վարորդը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_404 list_btn btn btn-block btn-white waves-effect waves-light">Կարմիր ավտոմոբիլի և մոտոցիկլի վարորդները:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ հեռավորության վրա է արգելվում տրանսպորտային միջոցների կայանումը երկաթուղային գծանցներից՝</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_403 list_btn btn btn-block btn-white waves-effect waves-light">150 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_403 list_btn btn btn-block btn-white waves-effect waves-light">100 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_403 list_btn btn btn-block btn-white waves-effect waves-light">50 մ:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_403 list_btn btn btn-block btn-white waves-effect waves-light btn-success">15 մ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Եթե երկաթուղային գծանցով երթևեկությունը արգելված է և բացակայում են լուսացույցը, ճանապարհային նշանները, գծանշումն ու ուղեփակոցը, ապա վարորդը պետք է կանգնի՝</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_402 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Մոտակա ռելսից ոչ պակաս, քան 10 մ հեռավորության վրա:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_402 list_btn btn btn-block btn-white waves-effect waves-light">Մոտակա ռելսից ոչ պակաս, քան 7 մ հեռավորության վրա:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_402 list_btn btn btn-block btn-white waves-effect waves-light">Մոտակա ռելսից ոչ պակաս, քան 5 մ հեռավորության վրա:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151ac91a8c/Page-7-Image-31.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Կանգառն արգելվում է, եթե հոծ գծի և կանգնած տրանսպորտային միջոցի միջև տարածությունը կազմում է`</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_401 list_btn btn btn-block btn-white waves-effect waves-light btn-success">2,5 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_401 list_btn btn btn-block btn-white waves-effect waves-light">3,5 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_401 list_btn btn btn-block btn-white waves-effect waves-light">4 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_401 list_btn btn btn-block btn-white waves-effect waves-light">5,5 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_401 list_btn btn btn-block btn-white waves-effect waves-light">6 մ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Որտե՞ղ է թույլատրվում երկարատև հանգստի, գիշերակացի և այլ նպատակներով կայանելը բնակավայրերից դուրս:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_400 list_btn btn btn-block btn-white waves-effect waves-light">Ճանապարհի ձախ կողմում` ապահովելով ճանապարհային երթևեկության անվտանգությունը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_400 list_btn btn btn-block btn-white waves-effect waves-light">Ճանապարհի երթևեկելի մասի աջ կողմում` չխոչընդոտելով այլ տրանսպորտային միջոցների երթևեկությունը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_400 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Կայանման համար նախատեսված հրապարակներում կամ ճանապարհի սահմաններից դուրս:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_400 list_btn btn btn-block btn-white waves-effect waves-light">Ճանապարհի կողնակներին:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151a389578/Page-6-Image-30.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր տրանսպորտային միջոցի վարորդն է խախտել կայանման կանոնները:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_399 list_btn btn btn-block btn-white waves-effect waves-light">Երկու վարորդներն էլ չեն խախտել:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_399 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Երկու վարորդներն էլ խախտել են:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_399 list_btn btn btn-block btn-white waves-effect waves-light">Կարմիր ավտոմոբիլի վարորդը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_399 list_btn btn btn-block btn-white waves-effect waves-light">Կապույտ ավտոմոբիլի վարորդը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1519975410/Page-6-Image-29.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք ավտոմոբիլի կանգառն այս վայրում:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_398 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Թույլատրվում է:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_398 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է ամսվա զույգ օրերին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_398 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է, քանի որ գծանշման ընդհատվող գծի և կանգ առած տրանսպորտային միջոցի միջև հեռավորությունը պակաս է 3 մետրից:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1518ecc9bb/Page-6-Image-28.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք կանգառը նշված տեղում:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_397 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Արգելվում է:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_397 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">«Կանգ-գծից» կամ «Երթևեկությունն առանց կանգառի արգելվում է» նշանից ի՞նչ հեռավարության վրա պետք է կանգնեցվի տրանսպորտային միջոցը՝ մոտեցող գնացքին ճանապարհը զիջելու համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_396 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Անմիջապես «Կանգ-գծի» և (կամ) նշանի մոտ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_396 list_btn btn btn-block btn-white waves-effect waves-light">10 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_396 list_btn btn btn-block btn-white waves-effect waves-light">5 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_396 list_btn btn btn-block btn-white waves-effect waves-light">2,5 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_396 list_btn btn btn-block btn-white waves-effect waves-light">1,5 մ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Բնակավայրերում, յուրաքանչյուր ուղղությամբ մեկ երթևեկելի գոտի ունեցող և մեջտեղում տրամվայի գծեր չունեցող ճանապարհների ձախ կողմում կանգառն ու կայանումը՝</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_395 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_395 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Որպես գնացքի կանգառի ազդանշան ծառայում է՝</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_394 list_btn btn btn-block btn-white waves-effect waves-light">Վեր և վար ճոճվող` առաջ պարզած ձեռքը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_394 list_btn btn btn-block btn-white waves-effect waves-light">Առաջ պարզած ձեռքը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_394 list_btn btn btn-block btn-white waves-effect waves-light">Սկավառակով կամ կարմիր դրոշակով գլխավերև բարձրացված ձեռքը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_394 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ձեռքի շրջանաձև շարժումը (ցերեկը` վառ գույնի լաթով կամ որևէ լավ տեսանելի առարկայով, գիշերը` ջահով կամ լապտերով):</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1517c78b0c/Page-5-Image-26.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Վարորդներից ո՞րն է պարտավոր կանգ առնել:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_393 list_btn btn btn-block btn-white waves-effect waves-light">Երկու վարորդն էլ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_393 list_btn btn btn-block btn-white waves-effect waves-light">Ավտոբուսի վարորդը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_393 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թեթեւ մարդատար ավտոմոբիլի վարորդը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15172651ec/Page-5-Image-25.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք տվյալ դեպքում կանգ առնել ուղևոր իջեցնելու համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_392 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_392 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է, եթե դա խոչընդոտ չի ստեղծի ընդհանուր օգտագործման տրանսպորտային միջոցների երթևեկությանը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Երկաթուղային գծանցներից ի՞նչ հեռավորության վրա է արգելվում տրանսպորտային միջոցների կայանումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_391 list_btn btn btn-block btn-white waves-effect waves-light btn-success">25 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_391 list_btn btn btn-block btn-white waves-effect waves-light">50 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_391 list_btn btn btn-block btn-white waves-effect waves-light">100 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_391 list_btn btn btn-block btn-white waves-effect waves-light">150 մ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_391 list_btn btn btn-block btn-white waves-effect waves-light">300 մ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151676b48d/Page-5-Image-24.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք ավտոմոբիլի կայանումը նշված տեղում:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_390 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_390 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1515e1f43b/Page-5-Image-23.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ազդու՞մ է արդյոք արգելող նշանը ճանապարհի այն հատվածի վրա, որտեղ կանգառ է կատարել վարորդը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_389 list_btn btn btn-block btn-white waves-effect waves-light">Չի ազդում:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_389 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ազդում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15185bf2c6/Page-5-Image-27.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք ուղևոր իջեցնել ճանապարհի այն տեղում, որտեղ եզրաքարի վերին մակերեսին գծված է դեղին հոծ գիծ և տեղադրված է «Կանգառն արգելվում է» նշանը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_388 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է միայն ընդհանուր օգտագործման տրանսպորտային միջոցներին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_388 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է՝ ընդհանուր օգտագործման տրանսպորտային միջոցների բացակայության դեպքում:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_388 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Արգելվում է:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_388 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Կայանումն արգելվում է՝</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_387 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թվարկած բոլոր դեպքերում:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_387 list_btn btn btn-block btn-white waves-effect waves-light">Կամուրջների, էստակադների և ուղեկամուրջների տակ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_387 list_btn btn btn-block btn-white waves-effect waves-light">Կամուրջների, էստակադների և ուղեկամուրջների վրա:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151535d1e1/Page-4-Image-22.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր տրանսպորտային միջոցներին է թույլատրվում կայանումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_386 list_btn btn btn-block btn-white waves-effect waves-light">Բոլոր տրանսպորտային միջոցներին:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_386 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թեթև մարդատար ավտոմոբիլին և մոտոցիկլին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_386 list_btn btn btn-block btn-white waves-effect waves-light">Միայն թեթև մարդատար ավտոմոբիլին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_386 list_btn btn btn-block btn-white waves-effect waves-light">Միայն բեռնատար ավտոմոբիլին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_386 list_btn btn btn-block btn-white waves-effect waves-light">Միայն մոտոցիկլին:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1514adb392/Page-4-Image-21.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր նկարում է վարորդը ճիշտ կատարել կանգառ` ուղևորներ իջեցնելու համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_385 list_btn btn btn-block btn-white waves-effect waves-light">Աջ նկարում:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_385 list_btn btn btn-block btn-white waves-effect waves-light">Երկու նկարներում էլ:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_385 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ձախ նկարում:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af15141c7464/Page-4-Image-20.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր ավտոմոբիլին է թույլատրվում կանգառ կատարել այս նշանների ազդման գոտում:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_384 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Դեղինին՝ «Հաշմանդամ» ճանաչման նշանով կահավորված:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_384 list_btn btn btn-block btn-white waves-effect waves-light"> Ոչ մեկին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_384 list_btn btn btn-block btn-white waves-effect waves-light"> Երկու ավտոմոբիլներին էլ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_384 list_btn btn btn-block btn-white waves-effect waves-light">Կարմիրին:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af151399ef76/Page-4-Image-19.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ է ցույց տալիս ընդհատվող լայն գծի տեսքով գծանշումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_383 list_btn btn btn-block btn-white waves-effect waves-light">Երթևեկելի մասի հիմնական գոտու և արգելակման գոտու միջև առկա սահմանը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_383 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Երթևեկելի մասի հիմնական գոտու և թափառքի գոտու միջև առկա սահմանը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_383 list_btn btn btn-block btn-white waves-effect waves-light">Երթևեկելի մասի և կողնակի միջև առկա սահմանը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1513190d8c/Page-4-Image-18.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք տվյալ գծանշման առկայության դեպքում զբոսաշրջության երթուղով երթևեկող ավտոբուսի վարորդին մուտք գործել «A» գծանշումով գոտի:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_382 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_382 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1510e09d32/Page-3-Image-16.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք նշված վայրում հետադարձ կատարել:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_381 list_btn btn btn-block btn-white waves-effect waves-light">Արգելվում է:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_381 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Թույլատրվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1510351d24/Page-3-Image-15.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ է նշանակում այս գծանշումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_380 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ցույց է տալիս երթևեկության այն գոտիների սահմանները, որտեղ իրականացվում է դարձափոխային կարգավորում:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_380 list_btn btn btn-block btn-white waves-effect waves-light">Հատուկ նշանակության ավտոմոբիլների համար նախատեսված երթևեկության գոտի:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_380 list_btn btn btn-block btn-white waves-effect waves-light">Ընդհանուր օգտագործման տրանսպորտային միջոցների համար նախատեսված երթևեկության գոտի:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1511846c21/Page-3-Image-17.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Վարորդը որտե՞ղ պետք է կանգնեցնի տրանսպորտային միջոցն այս գծանշման առկայության դեպքում:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_379 list_btn btn btn-block btn-white waves-effect waves-light">Գծանշումից ոչ պակաս, քան 5 մ հեռավորության վրա:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_379 list_btn btn btn-block btn-white waves-effect waves-light">Գծանշման վրա:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_379 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Գծանշման մոտ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150fb83bb5/Page-3-Image-14.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ է ցույց տալիս այս գծանշումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_378 list_btn btn btn-block btn-white waves-effect waves-light">Անասուններ քշելու համար նախատեսված տեղը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_378 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Այն տեղը, որտեղ հեծանվային արահետը հատում է ճանապարհի երթևեկելի մասը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_378 list_btn btn btn-block btn-white waves-effect waves-light">Հետիոտնային անցում:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ինչպե՞ս պետք է վարվի վարորդը՝ մոտենալով խաչմերուկին՝ «Կանգ - գիծ» գծանշման և լուսացույցի կանաչ ազդանշանի պայմաններում:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_377 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Շարունակի երթևեկությունը խաչմերուկով` առանց կանգառի:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_377 list_btn btn btn-block btn-white waves-effect waves-light">Կանգ առնի «Կանգ-գծի» մոտ, որից հետո վերսկսի երթևեկությունը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150f42cb2f/Page-3-Image-13.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք մուտք գործել սպիտակ լայն գծերով գծանշված ուղղորդ կղզյակ:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_376 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Արգելվում է:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_376 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է հետընթացի ժամանակ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_376 list_btn btn btn-block btn-white waves-effect waves-light">Թույլատրվում է միայն կանգառ կատարելու համար:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150e579a45/Page-2-Image-11.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Այս հորիզոնական ճանապարհային գծանշումը ցույց է տալիս՝</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_375 list_btn btn btn-block btn-white waves-effect waves-light">Մոտեցում կանգառն արգելված տեղին:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_375 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Այն տեղը, որտեղ վարորդը պետք է անհրաժեշտության դեպքում կանգ առնի` հատվող ճանապարհով երթևեկող տրանսպորտային միջոցներին</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_375 list_btn btn btn-block btn-white waves-effect waves-light">Երթևեկելի մասի նեղացում, որտեղ նվազում է երթևեկության գոտիների քանակը տվյալ ուղղությամբ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150dd81033/Page-2-Image-10.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Այս ճանապարհային գծանշումն ունի հետևյալ նշանակությունը:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_374 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Ցույց է տալիս ընդհանուր օգտագործման տրանսպորտային միջոցների կանգառի կետերը և տաքսիների կայանման վայրերը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_374 list_btn btn btn-block btn-white waves-effect waves-light">Ցույց է տալիս այն տեղերը, որտեղ արգելվում է մեխանիկական տրանսպորտային միջոցների կանգառը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_374 list_btn btn btn-block btn-white waves-effect waves-light">Ցույց է տալիս մայթամերձ կայանման տեղերը, որտեղ նշված են մեխանիկական տրանսպորտային միջոցների կանգնեցման ձևերը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150d5d4b34/Page-2-Image-9.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ո՞ր տրանսպորտային միջոցներին է թույլատրվում երթևեկել երթևեկելի մասի աջ գոտիով</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_373 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Միայն ընդհանուր օգտագործման տրանսպորտային միջոցներին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_373 list_btn btn btn-block btn-white waves-effect waves-light">Միայն հեծանիվներին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_373 list_btn btn btn-block btn-white waves-effect waves-light">Ընդհանուր օգտագործման տրանսպորտային միջոցներին և տաքսիներին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_373 list_btn btn btn-block btn-white waves-effect waves-light">Բոլոր մեխանիկական տրանսպորտային միջոցներին:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150ce51747/Page-2-Image-8.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ճանապարհային նշաններից որի՞ հետ կարող է կիրառվել դեղին գույնի ընդհատվող գծանշումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_372 list_btn btn btn-block btn-white waves-effect waves-light">«Կայանելն արգելվում է ամսվա կենտ օրերին»:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_372 list_btn btn btn-block btn-white waves-effect waves-light btn-success">«Կայանելն արգելվում է»:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_372 list_btn btn btn-block btn-white waves-effect waves-light">«Կանգառն արգելվում է»:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150ed1b2ee/Page-2-Image-12.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Որտե՞ղ է գծվում կանգառը եւ կայանումն արգելող տեղերը նշող դեղին հոծ գիծը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_371 list_btn btn btn-block btn-white waves-effect waves-light"> Միայն եզրաքարի վերին մակերեսին:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_371 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Երթևեկելի մասի եզրի մոտ կամ եզրաքարի վերին մակերեսին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_371 list_btn btn btn-block btn-white waves-effect waves-light">Երթևեկելի մասի եզրի մոտ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_371 list_btn btn btn-block btn-white waves-effect waves-light">Երթևեկելի մասի վրա:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150c689285/Page-2-Image-7.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Գծանշման այս գծերից ո՞րն է օգտագործվում դարձափոխային երթևեկությամբ գոտիները նշելու համար:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_370 list_btn btn btn-block btn-white waves-effect waves-light">3-րդ և 4 -րդ գծերը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_370 list_btn btn btn-block btn-white waves-effect waves-light">2-րդ և 3 -րդ գծերը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_370 list_btn btn btn-block btn-white waves-effect waves-light">3-րդ գիծը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_370 list_btn btn btn-block btn-white waves-effect waves-light btn-success">2-րդ գիծը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_370 list_btn btn btn-block btn-white waves-effect waves-light">1-ին գիծը:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150be636f5/Page-1-Image-6.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ են նախազգուշացնում երթեւեկելի մասի վրա գծանշված սլաքները:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_369 list_btn btn btn-block btn-white waves-effect waves-light">Ցույց են տալիս ճանապարհի վտանգավոր շրջադարձի ուղղությունը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_369 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Նախազգուշացնում են երթևեկության գոտու վերջին մոտենալու մասին:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_369 list_btn btn btn-block btn-white waves-effect waves-light">Նախազգուշացնում են վարորդին ճանապարհի վտանգավոր հատվածին մոտենալու մասին:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150b72af28/Page-1-Image-5.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Քանի՞ գոտի ունի ճանապարհը, որտեղ հանդիպակաց ուղղությունների տրանսպորտային հոսքերը բաժանվում են կրկնակի հոծ գծերով</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_368 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Չորս և ավելի գոտիներ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_368 list_btn btn btn-block btn-white waves-effect waves-light">Երեք գոտի:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_368 list_btn btn btn-block btn-white waves-effect waves-light">Երկու կամ երեք գոտի:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_368 list_btn btn btn-block btn-white waves-effect waves-light">Երկու գոտի:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150ae09abf/Page-1-Image-4.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ է ցույց տալիս այս գծանշումը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_367 list_btn btn btn-block btn-white waves-effect waves-light"> Այն տեղը, որտեղ հետիոտնային արահետը հատում է ճանապարհի երթևեկելի մասը:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_367 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Այն տեղը, որտեղ հեծանվային արահետը հատում է ճանապարհի երթևեկելի մասը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_367 list_btn btn btn-block btn-white waves-effect waves-light">Հետիոտնային անցում, որտեղ երթևեկությունը կարգավորվում է լուսացույցով:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1508757064/Page-1-Image-3.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Սլաքներով նշված ո՞ր ուղղություններով է թույլատրվում երթևեկությունը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_366 list_btn btn btn-block btn-white waves-effect waves-light">Ուղիղ, դեպի ձախ և հակառակ ուղղությամբ:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_366 list_btn btn btn-block btn-white waves-effect waves-light">Դեպի ձախ և հակառակ ուղղությամբ:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_366 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Միայն ուղիղ:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af1505fb5a30/Page-1-Image-2.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Թույլատրվու՞մ է արդյոք վարորդին հատել տրանսպորտային միջոցների կայանման տեղերի սահմանները նշող գծանշման հոծ գիծը:</h4>
+                <hr>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_365 list_btn btn btn-block btn-white waves-effect waves-light btn-success"> Թույլատրվում է:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_365 list_btn btn btn-block btn-white waves-effect waves-light"> Արգելվում է:</button>
+                            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-offset-3 m-t-30">
+        <div style="box-shadow: 0px 0px 20px 6px #9f9f9f;" class="blog-box-one">
+                            <div class="cover-wrapper">
+                    <a href="javascript:void(0)"><img style="width: 100%;" alt="Blog-img" src="http://fastdrive.am./images_list/5af150547f391/Page-1-Image-1.png" class="img-responsive"></a>
+                </div>
+                        <div class="post-info">
+                <h4 class="text-overflow m-t-0">Ի՞նչ է ցույց տալիս հորիզոնական գծանշման դեղին հոծ գիծը:</h4>
+                <hr>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_364 list_btn btn btn-block btn-white waves-effect waves-light">Այն տեղը, որտեղ արգելվում է տրանսպորտային միջոցների կայանումը:</button>
+                                    <button selected_list="0" type="0" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_364 list_btn btn btn-block btn-white waves-effect waves-light">Այն տեղը, որտեղ թույլատրվում է կանգառ կատարել՝ ուղևորներ իջեցնելու կամ տրանսպորտային միջոցը բեռնաթափելու համար:</button>
+                                    <button selected_list="0" type="1" onclick=" " style="white-space: normal; font-size: 14px; border: 1px solid black;" class="btn_list_364 list_btn btn btn-block btn-white waves-effect waves-light btn-success">Այն տեղը, որտեղ արգելվում է տրանսպորտային միջոցների կանգառը եւ կայանումը:</button>
+                            </div>
+        </div>
+    </div>
+
+<button onclick="if(confirm('Դուք պատրաստվում եք հաշվարկել արդյունքը։ Հաստատելու համար սեղմեք OK:')){ saveResult(); }" style="position: fixed; right: 20px; bottom: 20px; z-index: 999;" class="btn btn-success btn_result">Սխալ՝ 0 | Ճիշտ՝ 0 | Պատասխանած՝ 0 | Ընդամենը՝ 66</button>
+<script>
+    function saveResult(){
+        var selected_count = 66;
+        var selected_list = 0;
+        var selected_success = 0;
+        var selected_danger = 0;
+        $('.list_btn').each(function(e){
+            if($(this).attr('type') == 1){
+                $(this).addClass('btn-success');
+            }
+            if($(this).attr('type') == 0 && $(this).attr('selected_list') == 1){
+                selected_danger++;
+                $(this).addClass('btn-danger');
+            }
+
+            if($(this).attr('type') == 1 && $(this).attr('selected_list') == 1){
+                selected_success++;
+            }
+
+            if($(this).attr('selected_list') == 1){
+                selected_list++;
+            }
+        });
+        $('.btn_result').html('Սխալ՝ '+selected_danger+' | Ճիշտ՝ '+selected_success+' | Պատասխանած՝ '+selected_list+' | Ընդամենը՝ '+selected_count);
+        $('.list_btn').attr('onclick', ' ');
+    }
+
+    function select_list(tag, id){
+        $('.btn_list_'+id).removeClass('btn-primary').addClass('btn-white');
+        $(tag).attr('selected_list', 1);
+        $(tag).removeClass('btn-white').addClass('btn-primary');
+    }
+</script>
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    © 2016. All rights reserved. <a target="_blanck" href="http://s2s.am">www.s2s.am</a>
+                </footer>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <script>
+            var resizefunc = [];
+        </script>
+        <style>
+            .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+                vertical-align: inherit;
+                text-align: center;
+            }
+            .loader {
+                margin: 250px auto;
+                border: 16px solid #f3f3f3; /* Light grey */
+                border-top: 16px solid #328362; /* Blue */
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                animation: spin 2s linear infinite;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+        <!-- jQuery  -->
+
+        <script src="http://test.fastdrive.am/public/js/detect.js"></script>
+        <script src="http://test.fastdrive.am/public/js/fastclick.js"></script>
+        <script src="http://test.fastdrive.am/public/js/jquery.slimscroll.js"></script>
+        <script src="http://test.fastdrive.am/public/js/jquery.blockUI.js"></script>
+        <script src="http://test.fastdrive.am/public/js/waves.js"></script>
+        <script src="http://test.fastdrive.am/public/js/wow.min.js"></script>
+        <script src="http://test.fastdrive.am/public/js/jquery.nicescroll.js"></script>
+        <script src="http://test.fastdrive.am/public/js/jquery.scrollTo.min.js"></script>
+
+        <script src="http://test.fastdrive.am/public/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.bootstrap.js"></script>
+
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/jszip.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/pdfmake.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/vfs_fonts.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/buttons.print.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.scroller.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.colVis.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/datatables/dataTables.fixedColumns.min.js"></script>
+
+        <script src="http://test.fastdrive.am/public/pages/datatables.init.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/notifyjs/js/notify.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/notifications/notify-metro.js"></script>
+
+        <script src="http://test.fastdrive.am/public/js/jquery.core.js"></script>
+        <script src="http://test.fastdrive.am/public/js/jquery.app.js"></script>
+
+        <!--FooTable-->
+        <script src="http://test.fastdrive.am/public/plugins/footable/js/footable.all.min.js"></script>
+
+        <script src="http://test.fastdrive.am/public/plugins/switchery/js/switchery.min.js"></script>
+        <script src="http://test.fastdrive.am/public/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="http://test.fastdrive.am/public/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+        <script src="http://test.fastdrive.am/public/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="http://test.fastdrive.am/public/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js" type="text/javascript"></script>
+        <script src="http://test.fastdrive.am/public/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://test.fastdrive.am/public/plugins/multiselect/js/jquery.multi-select.js"></script>
+        <script type="text/javascript" src="http://test.fastdrive.am/public/plugins/jquery-quicksearch/jquery.quicksearch.js"></script>
+
+        <script type="text/javascript" src="http://test.fastdrive.am/public/plugins/autocomplete/jquery.mockjax.js"></script>
+        <script type="text/javascript" src="http://test.fastdrive.am/public/plugins/autocomplete/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="http://test.fastdrive.am/public/plugins/autocomplete/countries.js"></script>
+        <script type="text/javascript" src="http://test.fastdrive.am/public/pages/jquery.form-advanced.init.js"></script>
+        <!--FooTable Example-->
+        <script src="http://test.fastdrive.am/public/pages/jquery.footable.js"></script>
+
+        <script type="text/javascript">
+
+            $('.selectpicker2').selectpicker({
+                dropupAuto: false
+            });
+            $(document).ready(function () {
+                $('#formNoRun').on('keyup keypress', function(e) {
+                    var keyCode = e.keyCode || e.which;
+                    if (keyCode === 13) {
+                      e.preventDefault();
+                      return false;
+                    }
+                });
+
+                $('#datatable2').dataTable();
+
+                $('#datatable3').dataTable();
+
+                $('#datatable_day').dataTable( {
+                    "order": [[ 6, 'desc' ]]
+                } );
+                $('#datatable').dataTable();
+                $('#datatable-keytable').DataTable({keys: true});
+                $('#datatable-responsive').DataTable();
+                $('#datatable-colvid').DataTable({
+                    "dom": 'C<"clear">lfrtip',
+                    "colVis": {
+                        "buttonText": "Change columns"
+                    }
+                });
+                $('#datatable-scroller').DataTable({
+                    ajax: "http://test.fastdrive.am/public/plugins/datatables/json/scroller-demo.json",
+                    deferRender: true,
+                    scrollY: 380,
+                    scrollCollapse: true,
+                    scroller: true
+                });
+                var table = $('#datatable-fixed-header').DataTable({fixedHeader: true});
+                var table = $('#datatable-fixed-col').DataTable({
+                    scrollY: "300px",
+                    scrollX: true,
+                    scrollCollapse: true,
+                    paging: false,
+                    fixedColumns: {
+                        leftColumns: 1,
+                        rightColumns: 1
+                    }
+                });
+            });
+            TableManageButtons.init();
+
+        </script>
+        <script>
+            function closeNoet(id){
+                $.post("http://test.fastdrive.am/notes/closeNoet", { id: id })
+               .done(function( data ) {
+                   location.reload();
+               });
+            }
+
+            function chat_usre(id){
+                $.post("http://test.fastdrive.am/users/getChat", { id: id })
+               .done(function( data ) {
+                   $('#chatInfoAjax').html(data);
+               });
+            }
+
+            function add_chat(){
+                var from_user = $('#chat_from_user').val();
+                var to_user = $('#chat_user_to').val();
+                var text = $('#chat_text').val();
+                $.post("http://test.fastdrive.am/users/addChat", { user_from: from_user,user_to: to_user,text: text })
+               .done(function( data ) {
+                    chat_usre(to_user);
+               });
+            }
+
+            function getClientId(teg, type){
+                $('#getClientId').modal('show');
+                $('#getClientId_ajax').load('http://test.fastdrive.am/client_list/getClientId',{type: type});
+            }
+
+            function selectClient(id,name){
+                $('#getClientId').modal('hide');
+                $('#clientId').val(id);
+                $('#clientIdName').val(name);
+            }
+
+            $('.open-accaount').click(function(){
+                var id = $(this).attr('title');
+                $('#search_result').html(' ');
+                $.post("http://test.fastdrive.am/account_list/getAcount", { id: id })
+                .done(function( data ) {
+                     $('.account_view_ajax').html(data);
+                });
+            });
+
+        </script>
+        <script>$(".dataTable").DataTable();</script>
+        <!-- Modal -->
+        <div id="getClientId" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Ընտրեք հաճախորդին</h4>
+                    </div>
+                    <div class="modal-body" id="getClientId_ajax">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Փակել</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+<div style="z-index: 9999;" class="modal fade in" id="view_account" tabindex="-1" role="dialog" aria-hidden="false">
+    <div style="margin-top: 0px;" class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form action="http://test.fastdrive.am/problem_history/index" method="post">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Պարունակություն</h4>
+                </div>
+                <div style="height: 500px;" class="modal-body account_view_ajax">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Փակել</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div></body></html>
