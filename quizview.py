@@ -1,4 +1,5 @@
 import json
+import os
 import textwrap
 from typing import List
 import time
@@ -29,7 +30,6 @@ class QuizView(QMainWindow):
 
         self.scroll = QScrollArea()  # Scroll Area which contains the widgets, set as the centralWidget
         self.widget = QWidget()  # Widget that contains the collection of Vertical Box
-
 
         layout = QVBoxLayout()
         layout.setAlignment(Qt.AlignCenter)
@@ -88,6 +88,7 @@ class QuizView(QMainWindow):
             self.choices.append(buttons)
 
             widget.setLayout(lay)
+            widget.setStyleSheet("background-color: #eeeeee; border-style: outset; border-width: 1px; border-radius: 5px; border-color: #e3dfc8; padding: 2px;")
             layout.addWidget(widget)
 
         self.setLayout(layout)
@@ -131,7 +132,16 @@ class QuizView(QMainWindow):
                 if button.correct:
                     button.setStyleSheet("background-color: lightgreen")
 
+        correct_count = 0
+        for el in self.progress_data:
+            if el["correct"]:
+                correct_count += 1
+
+        self.setWindowTitle(f"Result: {correct_count} / {len(self.progress_data)}")
+
     def onSave(self):
         timestr = time.strftime("%Y%m%d-%H%M%S")
-        with open(timestr + ".json", "w", encoding="utf-8") as f:
-            json.dump(self.progress_data, f, ensure_ascii=False, indent=4)
+        fileName = QFileDialog.getSaveFileName(self, 'Save progress', timestr + ".json", '*.json')
+        if fileName:
+            with open(timestr, "w", encoding="utf-8") as f:
+                json.dump(self.progress_data, f, ensure_ascii=False, indent=4)

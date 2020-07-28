@@ -84,13 +84,16 @@ class MainWindow(QMainWindow):
                 with open(self.filename, "r", encoding="utf-8") as f:
                     dialog.progress_data = json.load(f)
 
+                progress_data = []
                 for el in dialog.progress_data:
-                    if el["correct"]:
-                        dialog.progress_data.remove(el)
+                    if not el["correct"]:
+                        progress_data.append(el)
+
+                dialog.progress_data = progress_data
 
                 new_questions = []
-                for el in questions:
-                    for ids in dialog.progress_data:
+                for ids in dialog.progress_data:
+                    for el in questions:
                         if el["id"] == ids["id"]:
                             new_questions.append(el)
                 dialog.questions = new_questions
